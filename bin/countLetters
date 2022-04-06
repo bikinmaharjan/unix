@@ -1,0 +1,5 @@
+#!/bin/bash
+read -p "Please enter word: " word
+wordCount=$(echo -n $word | wc -c)
+echo "The word $word has $wordCount letters"
+

@@ -1,0 +1,4 @@
+#!/bin/bash
+newName="$1.$2"
+mv $1 $newName
+echo $(ls -i $newName)

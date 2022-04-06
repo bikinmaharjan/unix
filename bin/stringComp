@@ -1,0 +1,21 @@
+#!/bin/bash
+if [ $# -eq 0 ]; then
+	echo "No argument supplied"
+elif [ $# -eq 1 ]; then
+	echo "Only 1 argument supplied"
+else
+
+	a=${#1} 
+	b=${#2} 
+
+	if [ $a -gt $b ]
+	then	
+		echo "The first string is longer than the second"
+	elif [ $a -lt $b ]
+	then
+		echo "The second string is longer than the first"
+	else
+		echo "Both strings are of equal length"
+	fi
+fi
+

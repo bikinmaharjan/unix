@@ -1,0 +1,5 @@
+#!/bin/bash
+
+lines=$(ls | wc -l)
+
+echo "$lines"

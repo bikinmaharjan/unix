@@ -1,0 +1,5 @@
+#!/bin/bash
+
+lions6=$(head -6 /examples/lionsInTheStreet)
+
+echo "$lions6"

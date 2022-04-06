@@ -1,0 +1,20 @@
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd/netif:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd/resolve:/usr/sbin/nologin
+syslog:x:102:106::/home/syslog:/usr/sbin/nologin
+messagebus:x:103:107::/nonexistent:/usr/sbin/nologin
+_apt:x:104:65534::/nonexistent:/usr/sbin/nologin
+lxd:x:105:65534::/var/lib/lxd/:/bin/false
+uuidd:x:106:110::/run/uuidd:/usr/sbin/nologin
+dnsmasq:x:107:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+landscape:x:108:112::/var/lib/landscape:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+pollinate:x:110:1::/var/cache/pollinate:/bin/false
+admin_scomunity:x:1000:1000:Ubuntu:/home/admin_scomunity:/bin/bash
+admin_fdm:x:1001:1001:,,,:/home/admin_fdm:/bin/bash
+courseware:x:1002:1002:Courseware Maintainance:/student_files:/bin/bash
+CyberArk.Test:x:1003:1003:,,,:/home/CyberArk.Test:/bin/bash
+omi:x:999:998::/home/omi:/bin/false
+omsagent:x:998:999:OMS agent:/var/opt/microsoft/omsagent/run:/bin/bash
+nxautomation:x:997:996:nxOMSAutomation:/home/nxautomation/run:/bin/bash
+sentinelone:x:995:994::/opt/sentinelone/home:/usr/sbin/nologin

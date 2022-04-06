@@ -1,0 +1,5 @@
+trades.dat
+brokers.dat
+shareHolders.dat
+stockExchanges.dat
+places.dat

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "The argument is $1"
