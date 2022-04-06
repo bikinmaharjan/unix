@@ -1,0 +1,21 @@
+#!/bin/bash
+
+read -p "Enter the file to delete: " fileName
+
+if [ -f $fileName ]; then
+	read -p 'Do you really want to delete the file?Press y for yes or n for no: ' response
+	case $response in
+		[yY])
+		       rm $fileName;;
+	       	[nN])
+		       exit 0;;
+	       	*)
+			echo "Invalid response";;
+	esac
+else
+	echo "File doesnot exist"
+	exit 1
+fi
+	 				
+	       	       
+

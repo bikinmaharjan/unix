@@ -3,8 +3,7 @@ if [ $# -eq 0 ]; then
 	echo "No argument supplied"
 elif [ $# -eq 1 ]; then
 	echo "Only 1 argument supplied"
-else
-
+elif [ $# -eq 2 ]; then
 	a=${#1} 
 	b=${#2} 
 
@@ -17,5 +16,7 @@ else
 	else
 		echo "Both strings are of equal length"
 	fi
+else
+	echo "More than 2 argument supplied"
 fi
 

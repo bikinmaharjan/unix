@@ -1,0 +1,19 @@
+#!/bin/bash
+cat<<eof
+
+1- Display the date and time
+2- Display the current working directory
+3- Display the processes being run by the current user
+
+eof
+
+read -p "Enter an option (1-3): " optVar
+
+case $optVar in
+	1) date;;
+	2) pwd;;
+	3) ps;;
+	*) echo "Error"
+		exit 1
+esac
+

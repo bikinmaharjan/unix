@@ -1,3 +1,14 @@
 #!/bin/bash
+#Getting just the time hours in 24 hour format
 
-echo "Hello" $USER
+time=$(date +%R | cut -d : -f1)
+username=$(echo $USER | cut -d "\\" -f2) 
+
+if [ $time -le 12 ]; then
+	echo "Good morning" $username
+elif [ $time -le 18 ]; then
+	echo "Good afternoon" $username
+else
+	echo "Good Evening" $username
+fi
+
