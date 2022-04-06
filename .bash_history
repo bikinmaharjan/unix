@@ -1,683 +1,3 @@
-clear
-ls
-mkdir fdm
-ls
-ps
-ps -ef
-cd fdm
-clear
-ls -l
-clear
-cd ..
-ls
-clear
-ls
-ls --help
-man ls
-stat
-clear
-cd ~/bin
-clear
-rm fdm
-cd ~
-pwd
-cd ..
-cd..
-cd ..
-ls
-ls dev
-clear
-cd ~
-ls
-cd ..
-ls
-clear
-cd ~
-rmdir fdm
-clear
-ls
-apt
-clear
-mkdir tradingSystem
-cd tradingSystem/
-ls
-touch countries places
-ls
-clear
-cd ..
-touch countries places
-ls
-cd tradingSystem/
-ls
-rm countries
-rm places
-ls
-clear
-cd ..
-mv places ktm
-ls
-clear
-cp ktm tradingSystem/
-ls
-cd  tradingSystem
-ls
-clear
-cd ..
-touch myProgram
--la myProgram
-ls -la myProgram
-chmod myProgram -rwxr-x--x
-ls -la myProgram
-chmod myProgram rwxr-x--x
-ls -la myProgram
-chmod u=rwx, g=rx, o =x myProgram 
-chmod u+rwx myProgram 
-cdmod g+rx myProgram 
-chmod g+rx myProgram 
-chmod o+x myProgram 
-ls -la myProgram
-clear
-mkdir temp
-cp myProgram temp
-rmdir -f temp
-ls
-rmdir temp
-rm -r temp
-clear
-ls /etc/hosts
-cd ..
-ls
-cles
-clear
-cat /etc/hosts
-cat /dev/fd/0
-cat /dev/tty0
-clear
-cat /bin/touch
-clear
-ls
-cd ~
-clear
-ls
-cd ..
-ls
-cd ..
-ls
-cd ..
-ls
-cp student_files/*.dat ~/tradingSystem/
-cd ~
-ls
-cd tradingSystem/
-ls
-clear
-cd ..
-cd..
-cd ..
-ls
-ls student_files
-cp day1 ~/tradingSystem/
-cp -r day1 
-cp -r day1 ~/tradingSystem/
-ls
-cp student_files/day1 ~/tradingSystem/
-cp -r student_files/day1 ~/tradingSystem/
-cp -r student_files/day2 ~/tradingSystem/
-clear
-ls
-cd ~
-ls
-cd tradingSystem/
-ls
-cd day
-cd day1
-ls
-clear
-cd ~
-cd tradingSystem/
-ls
-clear
-last places.dat
-last 2 places.dat
-first 4 companies.dat
-tail 2 places.dat
-tail places.dat
-clear
-head companies.dat
-head -5 companies.dat
-tail -2 places.dat
-clear
-cat places.dat
-clear
-ls -S
-ls -S | head -l
-ls -S | head-l
-ls -S | head -l
-dui -a
-du -a
-du -a | head -1
-du -a | sort -n -r | head -1
-du -a | sort -n -r | head -n 1
-clear
-file /etc/hosts
-file /dev/fd/0
-clear
-cp /student_files/day_* -r ~/temp
-cp -r /student_files/day* ~/temp
-cd ..
-ls
-ls -l myProgram 
-chmod u=rwx,g=rx,o=x myProgram 
-ls -l myProgram 
-chmod u=rwx,g=rx,o=-x myProgram 
-ls -l myProgram 
-clear
-file /dev/tty0
-file /bin/touch
-cd tradingSystem/
-clear
-cp -r /student_files/day* ~
-clear
-ls -lS
-ls -S
-rm -r day1
-rm -r day2
-ls
-ls -S
-clear
-ls -s | head -1
-ls -s
-ls -S
-ls -S | head -1
-clear
-ps
-ls -l broker
-ls
-ls -l brokers.dat 
-ls ~ > homeList
-ls
-cat homeList 
-cd ..
-ls /tradingSystem >> homeList
-ls tradingSystem >> homeList
-clear
-ls
-cat homeList
-clear
-last -20 /etc/passwd > newUsers
-cat newUsers 
-clear
-cat /etc/passwd
-clear
-last -20 /etc/passwd
-tail -20 /etc/passwd > newUsers
-cat newUsers 
-clear
-ls ~ | wc -l
-ls
-ls ~ > newHomeList | wc -l
-cat newHomeList
-clear
-ls ~ | tee newHomeList
-cat newHomeList 
-clear
-head -3 companies.dat | tail -1
-ls
-cd tradingSystem/
-ls
-head -3 companies.dat | tail -1
-cat companies.dat
-clear
-ls -S | head -5 | tee bigFiles.txt
-ls /student_files/*.dat > datFiles | wc -l datFiles
-ls /student_files/*.dat > datFiles | wc -l
-cat datFiles
-ls
-wc -l datFiles 
-clear
-head -9 brokers.dat | tail -3
-cat brokers.dat
-clear
-ls /student_files/*.dat > datFiles < 
-ls /student_files/*.dat > datFiles | wc -L datFiles
-clear
-cat homeList
-clear
-ls tradingSystem/ >> homeList
-ls tradingSystem
-ls
-clear
-cd ..
-cat homeList 
-clear
-ls -lS
-ls -S
-clear
-ls -lS
-ls /student_files/*.dat | tee datFiles | wc -l
-grep --help
-grep hall /student_files/day1/grepFile
-grep -w  hall /student_files/day1/grepFile
-grep -n  hall /student_files/day1/grepFile
-grep -v  hall /student_files/day1/grepFile
-grep -c  hall /student_files/day1/grepFile
-clear
-grep '^[0-9]' /student_files/day1/grepFile
-grep '6.' /student_files/day1/grepFile
-grep '6\.' /student_files/day1/grepFile
-grep '192*0' /student_files/day1/grepFile
-grep '192.*0' /student_files/day1/grepFile
-find /var -sike +100k -type f
-find /var -size +100k -type f
-find . -atime -1 -print
-clear
-find . -atime -1 -print
-find . -atime -1
-find . -atime -1 -print
--find /student_filex -size -100c -exec wc {} \;
-find /student_filex -size -100c -exec wc {} \;
-find /student_files -size -100c -exec wc {} \;
-find ~ -empty -ok rm {} \;
-n
-clear
-ls -l | grep ^-
-find /var -mtime -36 -print
-clear
-ps -l
-ps -o
-ps -0
-clear
-ps -a
-vi
-clear
-sleep 2
-sleep 10
-sleep 60 &
-ps
-batchprog > bpresults &
-kill 23277
-ps
-kill 22372
-ps
-kill -9 22372
-ps
-jobs
-ps -efa
-ps -f
-jobs -l
-clear
-sleep 10000000 &
-jobs -l
-clear
-ps
-kill 28347
-ps
-sleep 1000
-sleep 1000 &
-ps
-kill 31255
-ps
-clear
-kill -18 31552
-kill -18 31255
-clear
-sleep 1000
-sleep 1000 &
-job
-jobs
-jobs --help
-jobs -l
-fg % 31836
-clear
-ps
-kill 31836
-ps
-clear
-ls
-clear
-history
-history 301
-clear
-ls
-vi test
-cat test
-clear
-vi test
-vi datFiles
-cat datFiles 
-clear
-vi datFiles 
-clear
-cat datFiles 
-clear
-vi datFiles 
-clear
-vim datFiles 
-clear
-vim
-vi editor
-cat editor
-cut -5 editor
-clear
-vi editor1
-clear
-who
-who -a
-ps
-clear
-finger
-finger bikin.maharjan
-users
-users --version
-clear
-id
-clear
-du bikin.maharjan
-clear
-du hostname
-clear
-du -h bin
-clear
-echo $PATH
-uname
-uname -n
-uname -v
-clear
-which vi
-du bin
-ls
-clear
-du day1
-clear
-basename /etc/passwd
-dirname /etc/passwd
-readlink -f /etc/passwd
-clear
-readlink --help
-echo
-clear
-echo ktm
-echo editor
-clear
-echo I am superman
-clear
-echo -n 'hello world' | wcw -c
-echo -n 'hello world' | wc -c
-clear
-ehco $HOME
-echo $HOME
-clear
-ehlo
-clear
-sudo apt
-clear
-ps
-echo -e
-echo "\n\n\n\n"
-echo -e "\n\n\n\n"
-clear
-sort --help
-clear
-ls
-cd tradingSystem/
-ls
-cat brokers.dat 
-sort brokers.dat
-cat broker
-cat brokers.dat 
-clear
-sort brokers.dat 
-sort -n brokers.dat 
-sort -r brokers.dat 
-sudo apt update
-clear
-who | cut -d " " -f1
-who | cut -d " " -f2
-who | cut -d " " -f3
-who | cut -d " " -f4
-who | cut -d " " -f5
-clear
-who | cut -d " " -f1 | cut -d "\" -f2
-who | cut -d " " -f1 | cut -d '\' -f2
-who | cut -d " " -f1 | cut -d '\' -f2 |tr "." " "
-who | cut -d " " -f1 | cut -d '\' -f2 |tr "." " " | tr [:lower:] [:upper:]
-who | cut -d " " -f1 | cut -d '\' -f2 |tr "." " " | tr [:lower:] [:upper:] > users
-cat users
-clear
-cat brokers.dat | tr [0-9] ""
-cat brokers.dat | tr [0-9] ''
-cat brokers.dat | tr -d [0-9] 
-cat brokers.dat | tr -d [0-9] :
-cat brokers.dat | tr -d [0-9]":"
-cut -5 accounts
-clear
-cut
-cut --help
-cut -c 5 accounts
-cd ..
-cut -c 5 accounts
-clear
-ls
-ls /
-ls
-mv editor accounts
-ls
-cut -c 5 accounts
-cut -c 5 "FDM Academy"
-echo "FDM Academy" | cut -c 5
-cut -c [0-4] accounts
-cut --help
-cut -n [0-5] accounts
-clear
-cut -c 1 6 accounts
-cut -c 1,6 accounts
-cut -c 1-6 accounts
-cut -c 1-4 accounts
-cut -d ":" f2
-cut -d ":" -f2
-cut -d ":" -f2 accounts
-cut -d ":" -f3,4 accounts
-vi accounts 
-cut -d ":" -f3,4 accounts
-cut -d ":" -f3,4 accounts | tr ":" " "
-clear
-cut -help
-cut --help
-cut -f "Ray Manzarek"
-cut -f "Ray Manzarek" accounts
-clear
-find 'Ray Mazarek' accounts
-clear
-head -5 /etc/passwd
-head -5 /etc/passwd | sort
-sort accounts 
-sort -t " " -k2 accounts
-sort -t " " -k3 accounts
-sort -n accounts
-clear
-sort -n -k2 accounts
-sort -n -t ":" -k3 accounts
-sort -n -t ":" -k4 accounts
-sort -nt ":" -k4 accounts
-cut -d ":" 3
-cut -d ":" 3 accounts
-cut -d ":" -f3 accounts
-cut -d ":" -f3 accounts | sort -r
-cut -d ":" -f2 accounts
-cut -d ":" -f2 accounts | sort > sortedByName.txt
-cat sortedByName.txt 
-clear
-tr [0-9] * accounts
-clear
-tre --help
-tr --help
-tr [:digit:] *
-tr [:digit:] '*'
-tr [:digit:] '*' accounts
-tr [:digit:] "*" accounts
-clear
-echo accounts | tr [:digits:] "*"
-tr --help
-echo accounts | tr [:digit:] "*"
-tr [:digit:] "*"
-clear
-cat accounts | tr [:digit:] "*"
-clear
-cat accounts | tr -d [:upper:] 
-cut -d ":" -f2 accounts | tr [:lower:] [:upper:]
-cat accounts | tr '\n' ','
-cat accounts | tr '\n' ',' > commaStorage.txt
-cat commaStorage.txt 
-cat accounts | cut -d ":" -f1 | tr 'PIN' ''
-cat accounts | cut -d ":" -f1 | tr [:alphabet:] ''
-tr --help
-cat accounts | cut -d ":" -f1 | tr [:alpha:] ''
-cat accounts | cut -d ":" -f1 | tr -d [:alpha:]
-head -2 | tail -1 accounts
-clear
-cat accounts
-head -2 accounts
-head -2 accounts | tail -1
-head -2 accounts | tail -1 | cut 
-head -2 accounts | tail -1 | cut -d ":" -f4
-clear
-cat /student_files/day1/batchprog
-env
-date
-ls -a
-cat .bashrc
-env
-clear
-ls -l
-alia
-alias
-clear
-time
-date
-clear
-grep 'sleep' /student_filex/day1/batchprog
-grep 'sleep' /student_files/day1/batchprog
-grep 'sleep' /student_files/day1/batchprog | ls -c
-grep 'sleep' /student_files/day1/batchprog | ts =c
-grep 'sleep' /student_files/day1/batchprog | ts -c
-clear
-grep 'sleep' /student_files/day1/batchprog | ls -l
-clear
-echo $PATH
-mkdir bin
-ls
-clear
-vi bin/newcommand
-clear
-chmod 751 bin/newcommand 
-bash -x bin/newcommand
-clear
-fgrep $USER
-$USER
-clear
-export PATH="$HOME/bin:$PATH"
-newcommand
-clear
-$PATH
-clear
-$PATH
-newcommand
-clear
-grep 'sleep' /student_files/day1/batchprog
-grep 'sleep' /student_files/day1/batchprog | ls -l
-grep 'sleep' /student_files/day1/batchprog | ls -c
-grep 'sleep' /student_files/day1/batchprog | wc -l
-clear
-grep '534'
-grep '534' accounts
-clear
-ls
-cd bin
-vi myVars
-cat newcommand 
-clear
-myVars
-chmod 751 myVars 
-myVars
-vi myVars
-myVars
-clear
-myVars
-vi greeting
-greeting
-chmod 751 greeting
-greeting
-clear
-$USER
-$USER.name
-clear
-vi greeting
-greeting
-$USERNAME
-echo "$USER"
-echo "$USERNAME"
-echo "$USER"
-who
-clear
-$LOGNAME
-echo $LOGNAME
-echo $LOGNAME | tr -d 'FDMGROUP\' 
-echo $LOGNAME | tr -d "FDMGROUP\" 
-clear
-vi greeting 
-vi greeting
-cd bin
-vi greeting 
-greeting
-vi greeting 
-greeting
-clear
-vi createFiles
-clear
-chmod 751 createFiles 
-createFiles 
-ls
-cd mydir
-ls
-ls -l
-cd ..
-vi createFiles 
-clear
-vi createFiles 
-clear
-rm -f mydir
-rm -rf mydir
-ls
-clear
-createFiles 
-ls
-vi moveFiles
-chmod 751 moveFiles 
-moveFiles 
-clear
-vi moveFiles 
-moveFiles 
-vi moveFiles 
-moveFiles 
-clear
-moveFiles 
-ls mydir
-clear
-ls mydir
-vi moveFiles 
-clear
-vi lions6
-chmod 751 lions6 
-lions6 
-vi lions6
-lions6 
-vi lions6
-lions6 
-vi lions6
-lions6 
-head -6 /examples/lionsInTheStreet 
-vi lions6
-lions6 
 ps
 clear
 vi fileCount
@@ -808,3 +128,437 @@ countLetters
 vi countLetters 
 countLetters
 vi countLetters
+mkdir unixmock
+cp /student_files/day1/grepFile unixmock
+cp /student_files/day1/batchprog unixmock
+cd unixmock
+pwd
+clear
+ls
+clear
+cp /etc/hosts .
+ls
+chmod g=-r o=-r .
+chmod g=-r,o=-r .
+lsa
+ls -a
+ls -l
+chmod g=-r,o=-r hosts
+ls -l
+clear
+dir=hello
+echo $dir
+export $dir /home
+dir=/home
+ls $dir
+find ~ -mtime -1 -type f > recentfiles
+cat recentfiles 
+clear
+grep -v "^[a-zA-z]" grepfile
+ls
+clear
+grep -v "^[a-zA-z]" grepfile
+grep -v "^[a-zA-z]" grepFile 
+ls -a
+ls -a ~
+ls -a ~/ | egrep ^d
+ls -a ~
+ls -a~ | grep "^."
+ls -a ~ | grep "^."
+ls -a ~/ | grep "^."
+ls -a ~ | grep '."
+ls -a ~ | grep "^."
+ls -a ~ | grep ^.
+ls -ld .?*
+ls -ld .?* ~
+ls -ld ~ .?* 
+clear
+head -5 batchprog
+grep -w date batchprog | wc -l
+grep -wc date batchprog
+grep -wc "date" batchprog
+cut -c1-3 grepFile 
+clear
+who
+who | sort
+clear
+ps
+ps bash
+ps --help
+clear
+find ~ -type d
+find ~ -type d | wc -l
+which touch
+type touch
+clear
+find /etc -type f -name 'p*'
+find /etc -type f -name 'p*' >etcpfiles 2>/dev/null
+cat etcpfiles 
+clear
+ls /etc/hosts
+cat /etc/hosts
+cat /etc/hosts | tr ':' '*'
+cat /etc/hosts
+wc -m *
+wc *
+wc -m * > filesizelist
+filesizelist
+cat filesizelist 
+clear
+rm grepFile batchprog 
+ls
+who 
+who | cut -d "\"
+who | cut -d " " -f1
+who | cut -d " " -f1 | grep -c "FDMGROUP\"
+who | cut -d " " -f1 | tr -d "FDMGROUP\"
+who | cut -d " " -f1 | tr -d 'FDMGROUP\'
+who | cut -d " " -f1 | tr -d 'FDMGROUP\\'
+who | cut -d " " -f1 | tr -d "FDMGROUP\\"
+who | cut -d " " -f1 | tr -d "FDMGROUP\"
+who | cut -d " " -f1 | tr -d "FDMGROUP\
+who | cut -d " " -f1 | tr -d 'FDMGROUP\\'
+clear
+ls -l
+chmod m
+chmod g=-r,o=-r recentfiles
+ls -l
+cd ..
+git init
+git export
+git add .
+clear
+git commit -m 'UNIX'
+clear
+git remote add origin https://github.com/bikinmaharjan/unix.git
+git branch -M main
+git push -u origin main
+clear
+ls -a ~ | grep "^."
+ls -a ~ | grep '^.'
+ls -a ~ | grep '^/.'
+ls -a ~ | grep "^/."
+ls -a ~ | grep "^\."
+ls -a ~ | grep '^\.'
+ls -a ~ | grep '^.'
+ls
+cd unixmock/
+grep -c "date" batchprog
+ls
+clear
+who | cut -d " " -f1 | tr -d 'FDMGROUP\\'
+find ~ -type d| wc -l
+clear
+find ~ -type d| wc -l
+cat etcpfiles 
+clear
+wc -m *
+wc --help
+clear
+wc -m *
+wc -m ^f
+wc -m "^f"
+wc -m *
+ls
+clear
+git status
+clear
+$?
+clear
+echo $?
+clear
+git push
+cd ~/bin
+vi vis
+cp vis visi
+cat visi
+clear
+ls
+vi numComp 
+clear
+cat numComp 
+vi numComp 
+numComp 1 2
+vi numComp 
+numComp 1 2
+numComp 1
+numComp
+numComp 1 3 4
+clear
+vi stringComp 
+stringComp hello
+stringComp 
+stringComp hello world
+stringComp hello worlds
+stringComp hello worlds s
+clear
+ls 
+vis delFile
+git status
+clear
+vi delFile 
+yum list installed
+rpm -qa | less
+clear
+rpm
+clear
+vi delFile 
+touch test
+delFile
+vi delFile 
+delFile
+clear
+vi delFile 
+delFile
+ls
+touch test
+ls
+delFile
+clear
+vi delFile 
+delFile
+vi delFile 
+delFile
+ls
+delFile
+vi delFile 
+delFile
+touch test
+delFile
+ls
+vi delFile 
+touch test
+delFile 
+touch test
+delFile 
+ls
+clear
+vis myMenu
+myMenu 
+myMenu 2
+myMenu
+clear
+vi greeting
+greeting
+vi greeting
+where
+clear
+pd
+pwd
+date
+timedatectl list-timezones
+date
+time
+clear
+datetime
+date +%R
+date +%r
+date +%R | cut ':' -f1
+date +%R | cut : -f1
+date +%R | cut -d : -f1
+cd bin/
+vi greeting 
+greeting
+vi greeting 
+greeting
+vi greeting 
+greeting
+clear
+greeting
+clear
+git add .
+git status
+git commit -m 'Exercie 3 Shell completed'
+git push
+clear
+vis fileCounter
+ls
+fileCounter delFile greeting myMenu
+vis fileCounter
+ps
+clear
+ls
+vi fileCount
+vi fileCounter 
+fileCounter delFile greeting myMenu
+vi fileCounter myVars
+clear
+ls
+fileCounter myMeny
+fileCounter myMenu
+fileCounter greeting
+fileCounter greeting noice
+fileCounter greeting noice vis
+clear
+vi fileCounter
+fileCounter hello
+ls
+fileCounter ss hello
+fileCounter ss ss ss ss
+clear
+fileCounter myMenu he hello
+clear
+vis total
+total 5
+clear
+vi total
+total 5
+vi total
+total 5
+vi total
+total 5
+vi total
+total 5
+vi total
+total 5
+vi total
+total 5
+vi total
+total 5
+vi total
+total 5
+vi total
+total 5
+vi total
+total 5
+clear
+vi total
+total 5
+clear
+type pwd
+vi total
+total 5
+vi total
+total 5
+vi total
+total 5
+vi total
+total 5
+vi total
+total 5
+vi total
+total 5
+total 3
+total 54
+clear
+vis lineCounter
+lineCounter 
+lineCounter total
+clear
+vi lineCounter 
+lineCounter total
+vi lineCounter 
+lineCounter total
+vi lineCounter 
+lineCounter total
+clear
+wc -c total
+vi lineCounter 
+lineCounter total
+wc -m total
+wc -l total
+wc -l total | cut -d " " -f1
+vi lineCounter 
+lineCounter total
+vi lineCounter 
+clear
+cd bin
+vi lineC
+vi lineCounter 
+code lineCounter
+clear
+vi lineCounter 
+vi myMenu
+clear
+rm --help
+clear
+-f
+-f .
+base dir
+clear
+cd ..
+mkdir projects
+ls
+clear
+PATH=~/project:$PATH
+echo $PATH
+clear
+vi .bash_profile
+clear
+date
+chmod 751 .bash_profile
+date
+date'
+date
+clear
+vi .bash_profile
+ls
+clear
+ls
+ls -a
+echo "source ~/.bashrc" >> ~/.bash_profile
+cat .bash_profile
+ls
+clear
+ls
+clear
+cat .bashrc
+clear
+cd projects/
+clear
+vis recycle
+nano recycle
+git add .
+git commit -m 'Project start'
+git push
+clear
+cut -d \ -f2 $USER
+cut -d '\' -f2 $USER
+$USER
+cut -d "\\" -f2 $USER
+$USER
+echo $USER | cut -d "\\" -f2
+ls
+wc -m datFiles
+cd bin
+ls
+cat delFile 
+((1+1))
+clear
+ls
+wc -l delFile
+cat delFIle
+cat delFile 
+clear
+cat total
+wc -m total
+wc -l total
+wc --help
+wc -cl
+clear
+awk total
+clear
+cat total
+lineCounter total
+clear
+lineCounter total
+cat total
+lineCounter total
+wc -l $1
+wc -l total
+wc -ln total
+wc -l total |cut -d " " -f1
+wc -l total |cut -d " " -f1 | tr -d '\n'
+lineCounter total
+cat greeting
+date --help
+cat greeting
+date +%H
+clear
+date
+clear
+myMenu
+ls -io
+ls
+ls -
+ls -i
