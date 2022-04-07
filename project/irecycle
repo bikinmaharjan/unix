@@ -1,0 +1,96 @@
+#!/bin/bash
+
+#Checking if the folder exists
+if [ ! -d $HOME/recyclebin ]
+then
+	mkdir $HOME/recyclebin
+fi
+
+recycleFile(){
+	#Checking conditions
+	if [ $# -eq 0 ] #Checking if any file name was provided
+	then
+		echo "No File Name Provided"
+		exit 1
+	elif [ ! -e $1 ] #Checking if the file name exists
+	then
+		echo "File with name $1 doesnot exist"
+	elif [ -d $1 ] #Checking if the name sent is a directory
+	then
+		echo "Directory $1 cannot be removed"
+	elif echo $1 | grep -q "recycle" #Checking if the user is trying to delete the command
+	then
+		echo "Attempting to delete recycle - OPERATION ABORTED!!!"
+		exit 1
+	else	#If everything is ok delete the file
+		file_inode=$(ls -i $1 | cut -d " " -f1) #Getting the inode number of the file
+		file_name=$(basename $1)  #Getting just the filename
+		new_file_name=$file_name"_"$file_inode #Setting the new deleted filename 
+		file_path=$(readlink -f $1) #Getting the current path of the file
+		echo $new_file_name':'$file_path >> $HOME/.restore.info #Logging the filename and path to restoreinfo
+		mv $1 $new_file_name	#Changing the name of the file to deleted file format
+		mv $new_file_name $HOME/recyclebin #Moving the file to recyclebin
+	fi
+}
+
+
+if [ $# -eq 0 ]
+        then
+                echo $
+                echo "No filename provided!"
+                exit 1
+        fi
+
+
+while getopts :iv opt
+do
+        case $opt in
+                i) echo "i operation"
+                        read -p "Remove the files? " response
+			case $response in
+				[yY]) 	for file in $@
+					do
+						recycleFile $file
+					done
+				*)	exit 0
+        ;;
+                v) echo "v operation";;
+			for file in $@
+			do
+				recycleFile $file
+				echo "recycled $file"
+			done
+        esac
+done
+shift $(($OPTIND -1))
+
+
+#delete multiplefile
+recycleMultiple(){
+	if [ $# -eq 0 ]
+	then
+		echo $
+        	echo "No filename provided!"
+        	exit 1
+	fi
+
+        #looping all the filename from the arguments
+        for file in $@
+        do
+                deleteFile $file
+        done
+}
+
+while getopts :iv opt
+do
+	case $opt in
+		i) echo "i operation"
+			recycleMultiple
+	;;
+		v) echo "v operation";;
+	esac
+done
+shift $(($OPTIND -1))
+
+
+
