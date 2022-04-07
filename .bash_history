@@ -562,3 +562,573 @@ ls -io
 ls
 ls -
 ls -i
+ls
+readlink -f sas
+clear
+cd bin
+ls
+readlink myMenu
+readlink -f myMenu
+cd ..
+readlink -f myMenu
+clear
+basename myMenu
+touch test
+ls
+ls -l test
+clear
+touch test2
+ls
+clear
+recycle test2
+$PATH
+ls
+cd projects/
+ls
+clear
+recycle test2
+clear
+where recycle
+where
+clear
+who
+which ls
+clear
+which recycle
+clear
+$PATH
+ls
+cd ..
+mv projects project
+ls
+cd project/
+ls
+clear
+cd ..
+recycle 
+recycle test 2
+clear
+recycle test
+recycle test2
+clear
+ls
+recycle test3
+clear
+recycle test2
+ls
+cd recyclebin
+ls
+clear
+cd ..
+cat .restore.info
+clear
+cd ..
+ls
+cd ~
+clear
+touch test3
+recycle test3
+ls recyclebin/
+cat .restore.info 
+echo test':'hello
+rm .restore.info 
+clear
+cat .restore.info
+clear
+rm -f recyclebin
+rm -rf recyclebin
+ls
+clear
+ls
+touch test 2
+ls -a test
+ls -l test
+ls --help
+ls -i test
+clear
+ls
+ls -i 2
+ls -i test2
+touch test2
+recycle test
+ls recycle
+ls recyclebin/
+recycle 
+recycle sasdasdads
+git add .
+git commit -m 'Recycle Project phase 1 done'
+git push
+clear
+recycle recycle
+ls
+cd day1
+ls
+cd ..
+recycle names
+clear
+cd ..
+cd ~
+clear
+ls
+recycle 2
+recycle test2
+ls recyclebin/
+cat .restore.info 
+-e n
+clear
+-e ~/recyclebin/
+clear
+grep test $HOME/.restore.info
+
+grep -v test $HOME/.restore.info
+ls recyclebin/
+restore test2_516307
+restore 
+ls recyclebin/
+ls
+cat .restore.info
+ls -a
+cat .restore.info.tmp 
+mv .restore.info.tmp > .restore.info
+mv .restore.info.tmp  .restore.info
+cat restore.info
+cat .restore.info
+clear
+ls -a
+clear
+ls
+recycle test2
+ls
+ls recyclebin/
+cat .restore.info
+restore test2_516307
+ls recyclebin/
+ls
+cat .restore.info
+restore 2_515359
+cat .restore.info
+ls
+restore 2_515359
+ls recyclebin/
+clear
+cat .restore.info
+grep test_510763 .restore.info | cut -d ":" -f2
+$(readlink -f /home/local/FDMGROUP/bikin.maharjan/test)
+readlink -f /home/local/FDMGROUP/bikin.maharjan/test
+clear
+ls
+ls day1
+recycle day1/batchprog
+ls day1
+ls recycle
+ls recyclebin/
+clear
+git add .
+git commmit -m 'Project Phase 2 Restore done'
+git commit -m 'Project Phase 2 Restore done'
+git push
+clear
+irecycle -a
+irecycle -a ss
+clear
+irecycle -a ss sad
+irecycle -iv ss sad
+irecycle -i ss sad
+touch file1 file2
+ls
+clear
+irecycle file1 file2
+ls
+touch file 3
+ls
+rm 2 3
+ls
+clear
+irecycle file file2
+ls
+irecycle file file2
+ls
+cat recyclebin/
+ls recyclebin/
+irecycley -iv
+irecycle -iv
+irecycle -iv s
+irecycle -iv
+clear
+irecycle -iv
+irecycle -iv sad
+irecycle -iv sad sad
+irecycle -iv sad mad
+ls
+clear
+touch test123 test234
+irecycle test123 test234
+ls
+cat recyclebin/
+ls recyclebin/
+cat .restore.info 
+clear
+touch testz
+irecycle testxxxx testz
+ls
+ls recyclebin/
+clear
+touch rmtest
+rm -i rmtest
+touch rmtest
+touch -v rmtest
+rm -v rmtest
+touch rmtest
+rm rmtest
+clear
+touch testzxc{123456}
+ls
+rm testzxc\{123456\} 
+ls
+clear
+touch x1 x2 x3 x4 x5 x6 x7
+ls
+clear
+irecycle -i x1
+ls
+irecycle -i
+irecycle -i x2 x3
+cat restore
+cat project/restre
+cat project/restore 
+rm -i x3
+nano project/resor
+cat project/restore
+ls project/restore
+nano project/restore
+ls project
+clear
+rm -v x3
+git add .
+git commit -m 'Phase 3 in progress'
+git push
+clear
+irecycle -i
+ls
+rm -v x2
+rm -iv x4
+clear
+ls
+rm -r x5
+irecycle -i
+irecycle -i x5
+ls
+irecycle -i x6
+ls
+irecycle -v x7
+ls
+irecycle -iv test2
+clear
+ls
+touch test777
+rm -v test777
+touch re1 re2 re3 re4
+irecycle -i re1
+ls
+irecycle -v re1
+irecycle -v re2
+irecycle -v re3
+irecycle -iv re4
+ls
+irecycle -i x
+rm -i x
+irecycle -i x
+irecycle -i x y
+rm -i x y
+touch x y
+ls
+rm -i z x
+rm -i x z
+irecycle -i x z
+clear
+rm -v x z
+rm -iv y
+ls
+touch y1 y2 y3 y4 y5 y6
+ls
+irecycle -iv y1
+irecycle -iv y2 y1
+irecycle -iv y3 y1
+irecycle -iv y3 y4
+clear
+ls
+irecycle -iv y5 y6
+ls
+clear
+irecycle -iv y5 y6
+clear
+irecycle -v s
+ls
+irecycle -v s
+i=true
+echo ! $i
+echo $ii
+echo $iii
+echo $i
+echo "$ii"
+$i
+echo $i
+irecycle -v s
+ls
+clear
+touc asd1 asd2 asd3 asd4
+
+rm -v asd1
+rm -v asd
+irecycle asd2 
+ls
+clear
+irecycle asd2 
+ls
+irecycle -i asd3 asd4 
+clear
+ls
+touch asd6
+irecycle -v asd3 asd4 
+ls
+clear
+touch asd7 asd8 asd9
+ls 
+irecycle -v asd6 asd3
+ls
+irecycle -iv asd7 asd8
+ls
+clear
+ls
+irecycle asd8 asd9 asd
+ls
+clear
+git add .
+git commit -m 'Phase3 MultipleFiles, Wildcards and optional flags implemented
+'
+clear
+git push
+clear
+git add .
+git commit -m 'Backup'
+clear
+irecycle -x ss
+clear
+recycle -vi sa
+irecycle -vi sa
+ls
+touch lkjlkj
+irecycle -vi lkjlkj
+irecycle -iv lkjlkj
+touch jkljkl
+irecycle -vi lkjlkj
+irecycle -vi jkljkl
+clear
+mkdir testf
+irecycle testf
+rm -r testf
+ls
+clear
+rm --help
+clear
+recycle4 sad
+recycle4 -r sad
+recycle4 -r sad he
+recycle4 -r
+clear
+ls -l /hello
+ls
+ls -l day1
+ls day1
+recycle4 -r day1
+recycle4 -r day
+recycle4 -r day1
+for file in day1; do echo $file; done
+for file in *; do echo $file; done
+recycle4 -r day1
+mkdir test
+ls
+cd test
+touch testfolder1 testfolder2 testfolder3
+cd ..
+recycle4 -r test
+ls
+ls test
+ls recyclebin/
+cat .restore.info 
+ls
+cd test
+touch testfolder{04..07}
+ls
+clear
+cd ..
+ls
+recycle4 -r test
+ls
+ls test
+ls recyclebin/
+
+touch testfolder{07..15}
+ls
+clear
+recycle4 -r test
+ls
+cd ..
+ls
+ls test
+clear
+recycle4 -r test
+ls
+cat .restore.info 
+clear
+touch file{001..020}
+ls
+recycle file001
+ls
+recycle file001 file002 file003
+ls
+recycle -v file004 file005
+recycle -v file004
+recycle -v file005
+recycle -v file006
+ls
+recycle -i file007
+ls
+recycle -i file007 file008
+recycle -iv file009
+recycle -iv file010 file 011
+recycle -iv file010 file011
+clear
+mkdir testf
+cd testf
+touch testf{001..003}
+ls
+cd ..
+test -r s
+ls
+test -r ss
+test -r file012
+ls
+recycle -r ss
+recycle -r
+recycle -r testf
+ls
+ls recyclebin/
+cat .restore.info
+git add .
+git commit -m "Phase 4 Recycle File Recursively completed"
+clear
+cat .restore.info
+restore testf003_644498
+restore file011_523945
+ls
+clear
+cat .restore.info
+
+clear
+restore testf003_644498
+cat .restore.info 
+restore testf003_644498
+ls recyclebin/
+ls
+cd test
+restore y1_521796
+cat .restore.info 
+cd /home/local/FDMGROUP/bikin.maharjan/testf
+cd /home/local/FDMGROUP/bikin.maharjan
+ls
+$readlink -f /home/local/FDMGROUP/bikin.maharjan/y1
+readlink -f /home/local/FDMGROUP/bikin.maharjan/y1
+readlink -f /home/local/FDMGROUP/bikin.maharjan/test/y1
+mkdir tet2
+readlink -f /home/local/FDMGROUP/bikin.maharjan/tet2/y1
+restore testf002_644491
+mv --help
+restore testf002_644491
+clear
+grep testf002_644491 $HOME/.restore.info
+cat .restore.info
+grep testf001_639946 $HOME/.restore.info
+grep testf001_639946 $HOME/.restore.info | cut -d ":" -f2
+readlink -f /home/local/FDMGROUP/bikin.maharjan/testf/testf001
+readlink -f /home/local/FDMGROUP/bikin.maharjan/testf
+readlink --help
+readlink -m /home/local/FDMGROUP/bikin.maharjan/testf
+readlink -m /home/local/FDMGROUP/bikin.maharjan/testf/testf001
+mv hello hellofolder/hello
+ls
+mv file011 hellofolder/file011
+mv --help
+readlink -m /home/local/FDMGROUP/bikin.maharjan/testf/testf001
+cat .restore.info 
+mv $HOME/recyclebin/testf001_639946 /home/local/FDMGROUP/bikin.maharjan/testf/testf001
+mkdir -p /home/local/FDMGROUP/bikin.maharjan/testf/testf001
+ls
+cd testf
+ls
+cd ..
+cd testf/
+rm testf001/
+rm -r testf001/
+ls
+clear
+cd ..
+mv $HOME/recyclebin/testf001_639946 /home/local/FDMGROUP/bikin.maharjan/testf/testf001
+ls testf
+clear
+readlink --help
+readlink -m /home/local/FDMGROUP/bikin.maharjan/testf/testf001
+readlink -m /home/local/FDMGROUP/bikin.maharjan/testf/testf001 | cut / -f 1 | rev
+readlink -m /home/local/FDMGROUP/bikin.maharjan/testf/testf001 | cut "/" -f 1 | rev
+readlink -m /home/local/FDMGROUP/bikin.maharjan/testf/testf001 | cut -d "/" -f 1 | rev
+readlink -m /home/local/FDMGROUP/bikin.maharjan/testf/testf001 | cut -d "/" -f 1
+echo /home/local/FDMGROUP/bikin.maharjan/testf/testf001 | cut -d "/" -f 1
+echo /home/local/FDMGROUP/bikin.maharjan/testf/testf001 | cut -d "/" -f1
+echo /home/local/FDMGROUP/bikin.maharjan/testf/testf001 | cut -d "/" -f2
+echo /home/local/FDMGROUP/bikin.maharjan/testf/testf001 | cut -nd "/" -f1 | rev
+echo /home/local/FDMGROUP/bikin.maharjan/testf/testf001 | cut -d "/" -f1 | rev
+
+readlink -m /home/local/FDMGROUP/bikin.maharjan/testf/testf001 | rev | cut -d '/' -f2 | rev
+readlink -m /home/local/FDMGROUP/bikin.maharjan/testf/testf001 | rev | cut -d '/' -f1 | rev
+cat .restore.info 
+trestore testf001_639946
+ls
+ls recyclebin/
+trestore testfolder15_645265
+ls recyclebin/
+cat .restore.info 
+ls
+find test
+clear
+trestore testfolder15_645265
+clear
+readlink -f /home/local/FDMGROUP/bikin.maharjan/testf/testf001
+readlink -f /home/local/FDMGROUP/bikin.maharjan/test/testf001
+ls recyclebin/
+cat rest
+ls -a
+cat .restore.info
+trestore testfolder07_645250
+clear
+if [ readlink-f /sad ]; then echo "hello
+fi
+ls
+-d /home/local/FDMGROUP/bikin.maharjan/test
+trestore testfolder07_645250
+clear
+trestore testfolder07_645250
+cat .restore.info
+trestore testfolder07_645248
+cat .restore.info
+trestore testfolder10_645255
+cat .restore.info
+trestore testfolder11_645257
+trestore testfolder12_645261
+trestore testfolder13_645261
+trestore file010_523944
+dirname /home/local/FDMGROUP/bikin.maharjan/test/testfolder14
+cat .restore.info
+trestore file014_645263
+trestore testfolder014_645263
+trestore testfolder14_645263
+trestore testfolder12_645259
