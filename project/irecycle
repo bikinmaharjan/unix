@@ -1,5 +1,9 @@
 #!/bin/bash
 
+i=false
+v=false
+r=false
+
 #Checking if the folder exists
 if [ ! -d $HOME/recyclebin ]
 then
@@ -10,14 +14,14 @@ recycleFile(){
 	#Checking conditions
 	if [ $# -eq 0 ] #Checking if any file name was provided
 	then
-		echo "No File Name Provided"
+		echo "No File Name Provided!"
 		exit 1
 	elif [ ! -e $1 ] #Checking if the file name exists
 	then
-		echo "File with name $1 doesnot exist"
+		echo "File with name $1 doesnot exist!"
 	elif [ -d $1 ] #Checking if the name sent is a directory
 	then
-		echo "Directory $1 cannot be removed"
+		echo "Directory $1 cannot be removed!"
 	elif echo $1 | grep -q "recycle" #Checking if the user is trying to delete the command
 	then
 		echo "Attempting to delete recycle - OPERATION ABORTED!!!"
@@ -34,35 +38,73 @@ recycleFile(){
 }
 
 
-if [ $# -eq 0 ]
-        then
-                echo $
-                echo "No filename provided!"
-                exit 1
-        fi
 
-
-while getopts :iv opt
+while getopts :ivr opt
 do
         case $opt in
-                i) echo "i operation"
-                        read -p "Remove the files? " response
-			case $response in
-				[yY]) 	for file in $@
-					do
-						recycleFile $file
-					done
-				*)	exit 0
-        ;;
-                v) echo "v operation";;
-			for file in $@
-			do
-				recycleFile $file
-				echo "recycled $file"
-			done
+                i)      i=true;;
+                v) 	v=true;;
+		r)	r=true;;
+		*)	echo "Offending option value!"
+			exit 1;;
         esac
 done
+if [ $OPTIND -eq 1 ]
+then
+	for file in $@
+	do
+		recycleFile $file
+	done
+fi
+
 shift $(($OPTIND -1))
+
+if [ $# -eq 0 ]
+then
+        echo "No filename provided!"
+        exit 1
+fi
+
+if $i
+then
+	for file in $@
+	do
+		if [ ! -e $file ] #Checking if the file name exists
+        	then
+                	echo "File with name $file doesnot exist"
+		else
+			read -p "Recycle file '$file'? " response
+			case $response in
+				[yY]) 	recycleFile $file
+					if $v
+					then
+						echo "Recycled '$file'"
+					fi
+					;;
+				*)	;;
+			esac
+		fi
+	done
+fi
+
+if ! $i && $v
+then
+	for file in $@
+	do
+		if [ ! -e $file ] #Check if the file name exists
+		then
+			echo "File with name $file doesnot exist"
+		else
+			recycleFile $file
+			echo  "Recycled '$file'"
+		fi
+	done
+fi
+
+
+
+
+
 
 
 #delete multiplefile
@@ -81,16 +123,6 @@ recycleMultiple(){
         done
 }
 
-while getopts :iv opt
-do
-	case $opt in
-		i) echo "i operation"
-			recycleMultiple
-	;;
-		v) echo "v operation";;
-	esac
-done
-shift $(($OPTIND -1))
 
 
 
