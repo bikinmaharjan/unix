@@ -1132,3 +1132,90 @@ trestore file014_645263
 trestore testfolder014_645263
 trestore testfolder14_645263
 trestore testfolder12_645259
+ls
+cd projects/
+ls
+nano recycle 
+ls
+cd ..
+cd project/
+ls
+clear
+vis restore
+nano restore
+cat restore
+clear
+nano restore
+cd ..
+cd project/
+nano restore
+cat recycle
+clear
+cat recycle
+clear
+cp recycle irecycle
+nano irecycle 
+cat irecycle
+cp irecycle recyle4
+ls
+cp recycle recycle1
+nano recycle4
+ls
+my recyle4 recycle4
+mv recyle4 recycle4
+ls
+nano recycle4
+nano restore
+cp restore trestore
+nano trestore
+cat .restore.info
+cd ..
+cat .restore.info
+restore file001_523904
+cat .restore.info
+ls
+restore testfolder08_645252
+ls
+ls test
+rm -r test
+ls
+restore testfolder06_645247
+ls
+cat test
+ls test
+clear
+git add .
+git commit -m 'Phase 5: Restore Files Recycled Recursively'
+git push
+clear
+mkdir -p test
+ls
+mkdir -p test
+ls
+mkdir test
+clear
+trestore testfolder12_645259
+mkdir -p /home/local/FDMGROUP/bikin.maharjan/test/testfolder12
+ls test
+rm -r test
+mkdir -p /home/local/FDMGROUP/bikin.maharjan/test
+dirname /home/local/FDMGROUP/bikin.maharjan/test/testfolder12
+dirname /home/local/FDMGROUP/bikin.maharjan/test/testfolder12 | mkdir -p
+clear
+trestore testfolder12_645259
+dirname /home/local/FDMGROUP/bikin.maharjan/test/testfolder12
+trestore testfolder12_645259
+cat .restore.info
+ls recyclebin
+trestore testfolder12_645259
+ls recyclebin
+cat .restore.info
+ls
+ls test
+rm -r test
+ls
+trestore testfolder09_645253
+ls
+ls test
+clear
+ls

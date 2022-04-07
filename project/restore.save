@@ -1,0 +1,34 @@
+#!/bin/bash
+
+#Restore function
+restore(){
+	if [ $# -eq 0 ]		#Checking if any arguments have been supplied
+	then
+		echo "No file name provided"
+		exit 1
+	elif [ ! -f $HOME/recyclebin/$1 ]	#Checking if the file exits
+	then
+		echo "File does not exist"
+		exit 1
+	fi
+
+	restore_file_path=$(grep $1 $HOME/.restore.info | cut -d ":" -f2) #Checking if the file info exists in restore info and getting just the path
+	restore_file_dir=$(readlink -f $restore_file_path) #Setting the path to the directory of the file
+
+	if [ -f $restore_file_path ]	#Checking if the file already exist in the restore folder
+	then
+		read -p "Do you want to override? y/n: " response
+			yY) 	mv $HOME/$recyclebin/$1 $restore_file_dir	#moving the deleted file to original folder
+				grep -v $1 $HOME/.restore.info > $HOME/.restore.info.tmp #Moving the .restore.info data to a temp file without the info of the restored file
+				mv $HOME/.restore.info.tmp > $HOME/.restore.info	#Restoring the restore.info file back
+				exit 0;;
+
+			*)	echo "File not restored"
+				exit 0;;
+
+	else	#else file with the name doesnot exist in the restore folder
+		mv
+}
+
+restoreFile(){
+
