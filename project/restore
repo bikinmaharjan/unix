@@ -1,0 +1,40 @@
+#!/bin/bash
+
+restore() {
+	if [ $# -eq 0 ] #Checking if any arguments is passed
+	then
+		echo "No filename provided!"
+		exit 1
+	elif [ ! -e $HOME/recyclebin/$1 ] #Checking if the file exists in recyclebin
+	then
+		echo "File doesnot exist!"
+		exit 1
+	fi
+
+	filepath_abs=$(grep $1 $HOME/.restore.info | cut -d ":" -f2) #Getting the abs path of the file from restoreinfo
+	filepath=$(readlink -f $filepath_abs)	#Getting just the path from abs path
+
+	if [ -e $filepath_abs ] #Checking if the file exist in the restore location
+	then
+		read -p "Do you want to overwrite? y/n: " response
+		case $response in	#If yes do you want to override
+			yY)	mv $HOME/recyclebin/$1 $filepath  #Moving the file to the path
+				grep -v $1 $HOME/.restore.info > $HOME/.restore.info.tmp #moving the restore info to a temp file without the info of the restore file
+				mv $HOME/.restore.info.tmp  $HOME/.restore.info #restoring the .restore.info back
+				exit 0;;
+
+			*)	echo "File wasnot overwritten"
+				exit 0;;
+		esac
+
+	else
+		#Same as above
+		mv $HOME/recyclebin/$1 $filepath 
+		grep -v $1 $HOME/.restore.info > $HOME/.restore.info.tmp
+		mv $HOME/.restore.info.tmp  $HOME/.restore.info
+		exit 0
+	fi
+
+}
+
+restore $1
