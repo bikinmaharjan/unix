@@ -1,25 +1,27 @@
 #!/bin/bash
 
+i=false
+v=false
+r=false
+
 #Checking if the folder exists
 if [ ! -d $HOME/recyclebin ]
 then
 	mkdir $HOME/recyclebin
 fi
 
-deleteFile(){
+recycleFile(){
 	#Checking conditions
 	if [ $# -eq 0 ] #Checking if any file name was provided
 	then
-		echo "No File Name Provided"
+		echo "No File Name Provided!"
 		exit 1
 	elif [ ! -e $1 ] #Checking if the file name exists
 	then
-		echo "File with name $1 doesnot exist"
-		exit 1
+		echo "File with name $1 doesnot exist!"
 	elif [ -d $1 ] #Checking if the name sent is a directory
 	then
-		echo "Directory $1 cannot be removed"
-		exit 1
+		echo "Directory $1 cannot be removed!"
 	elif echo $1 | grep -q "recycle" #Checking if the user is trying to delete the command
 	then
 		echo "Attempting to delete recycle - OPERATION ABORTED!!!"
@@ -35,7 +37,104 @@ deleteFile(){
 	fi
 }
 
-deleteFile $1
+
+#Checking for options
+while getopts :ivr opt
+do
+        case $opt in
+                i)      i=true;;
+                v) 	v=true;;
+		r)	r=true;;
+		*)	echo "Offending option value!"
+			exit 1;;
+        esac
+done
+#If no options provided
+if [ $OPTIND -eq 1 ]
+then
+	for file in $@
+	do
+		recycleFile $file
+	done
+fi
+
+shift $(($OPTIND -1))
+
+#If options provided but no filename
+if [ $# -eq 0 ]
+then
+        echo "No filename provided!"
+        exit 1
+fi
+
+#If the option is i
+if $i
+then
+	for file in $@
+	do
+		if [ ! -e $file ] #Checking if the file name exists
+        	then
+                	echo "File with name $file doesnot exist"
+		else
+			read -p "Recycle file '$file'? " response
+			case $response in
+				[yY]) 	recycleFile $file
+					if $v		#if v is passed along with i
+					then
+						echo "Recycled '$file'"
+					fi
+					;;
+				*)	;;
+			esac
+		fi
+	done
+fi
+
+#if only v is passed
+if ! $i && $v 
+then
+	for file in $@
+	do
+		if [ ! -e $file ] #Check if the file name exists
+		then
+			echo "File with name $file doesnot exist"
+		else
+			recycleFile $file
+			echo  "Recycled '$file'"
+		fi
+	done
+fi
+
+
+#if r is passed
+if $r
+then
+	if [ $# -eq 1 ] #If only one directory name is entered
+	then
+		if [ ! -d $@ ]  #Check if the name entered is a directory
+		then
+			echo "Directory $@ doesnot exist"
+		else
+			cd $@	#cd into the folder to loop through the files and delete them
+			for file in *
+			do
+				recycleFile $file
+			done
+			cd .. #cd out of the folder to delete the folder
+			rm -r $@
+		fi
+
+	else
+		echo "More than one or zero directory name provided!"
+	fi
+
+fi
+
+
+
+
+
+
 
 
 

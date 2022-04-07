@@ -106,7 +106,29 @@ then
 fi
 
 
+#if r is passed
+if $r
+then
+	if [ $# -eq 1 ]
+	then
+		if [ ! -d $@ ]
+		then
+			echo "Directory $@ doesnot exist"
+		else
+			cd $@
+			for file in *
+			do
+				recycleFile $file
+			done
+			cd ..
+			rm -r $@
+		fi
 
+	else
+		echo "More than one or zero directory name provided!"
+	fi
+
+fi
 
 
 
