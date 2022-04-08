@@ -82,13 +82,18 @@ rOption(){
 		fi
 		if [ -d $1 ]
 		then
-			cd $1   #cd into the folder to loop through the files and delete them
-                        for file in *
-                        do
-                                recycleFile $file
-                        done
-                        cd .. #cd out of the folder to delete the folder
-                        rm -r $1
+			if [ "$(ls -A $1)" ]	#Check if the directory is not empty
+			then
+				for file in $1/* #looping through the files in the directory
+                        	do
+                                	recycleFile $file
+                        	done
+                        	rmdir $1 #Remove only if the folder is empty
+
+			else
+				rmdir $1
+				echo "Empty directory $1 removed"
+			fi
 		fi
 	fi
 

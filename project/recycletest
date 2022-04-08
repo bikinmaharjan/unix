@@ -82,13 +82,11 @@ rOption(){
 		fi
 		if [ -d $1 ]
 		then
-			cd $1   #cd into the folder to loop through the files and delete them
-                        for file in *
+                        for file in $1/* $1/.[^.]*
                         do
                                 recycleFile $file
                         done
-                        cd .. #cd out of the folder to delete the folder
-                        rm -r $1
+                        rmdir $1 #Remove only if the folder is empty
 		fi
 	fi
 
